@@ -14,12 +14,58 @@ import simon from '../../assets/simon.png'
 import tom from '../../assets/tom.png'
 import megan from '../../assets/megan.png'
 import cameron from '../../assets/cameron.png'
-const Sidebar = () => {
+const Sidebar = ({sidebar}) => {
   return (
-    <div className='sidebar'>
+    <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>
       <div className="sortcut-links">
-        div.side-link
-      </div>
+        <div className="side-link">
+          <img src={home} alt="" /><p>Home</p>
+        </div>
+        <div className="side-link">
+          <img src={game_icon} alt="" /><p>Gaming</p>
+        </div>
+        <div className="side-link">
+          <img src={automobiles} alt="" /><p>Automobiles</p>
+        </div>
+        <div className="side-link">
+          <img src={sports} alt="" /><p>sports</p>
+        </div>
+        <div className="side-link">
+          <img src={entertainment} alt="" /><p>Entertainment</p>
+        </div>
+        <div className="side-link">
+          <img src={tech} alt="" /><p>Technology</p>
+        </div>
+        <div className="side-link">
+          <img src={music} alt="" /><p>Music</p>
+        </div>
+        <div className="side-link">
+          <img src={blogs} alt="" /><p>Blogs</p>
+        </div>
+        <div className="side-link">
+          <img src={news} alt="" /><p>News</p>
+        </div>
+        <hr />
+        </div>
+
+        <div className="subscribed-list">
+         <h3>Subscribed</h3>
+         <div className="side-link">
+          <img src={jack} alt="" /><p>pewDiePie</p>
+         </div>
+         <div className="side-link">
+          <img src={simon} alt="" /><p>MrBeast</p>
+         </div>
+         <div className="side-link">
+          <img src={tom} alt="" /><p>Justin Bieber</p>
+         </div>
+         <div className="side-link">
+          <img src={megan} alt="" /><p>5-Minutes craft</p>
+         </div>
+         <div className="side-link">
+          <img src={cameron} alt="" /><p>Nas Daily</p>
+         </div>
+        </div> 
     </div>
   )
 }
